@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <title>{% block title%} {% endblock %}</title>
+    <link rel="stylesheet" href="../../static/css/menu_style.css">
+   
+</head>
+<body>
+<!--  MAIN MENU -->
+    <nav class="menu" id="menu">
+        <div class="contenedor contenedor-botones-menu">
+            <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+            <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+        </div>
+
+        <div class="contenedor contenedor-enlaces-nav">
+            <div class="btn-categorias" id="btn-categorias">
+                <p>Todas las <span>Categorias</span></p>
+                <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="enlaces">
+                <a href="#">Cuenta</a>
+                <a href="#">Pedidos</a>
+                <a href="#">Servicios</a>
+                <a href="#">Ayuda/Contacto</a>
+            </div>
+        </div>
+        <div class="contenedor contenedor-grid">
+            <div class="grid " id="grid">
+                <div class="categorias">
+                    <button class="btn-regresar"><i class="fas fa-caret-left"></i>Regresar</button>
+                    <h3 class="subtitulo">Categorias</h3>
+                    <a href="#" data-categoria="Mujeres">Mujeres <i class="fas fa-angle-right"></i></a>
+                    <a href="#" data-categoria="Hombres">Hombres <i class="fas fa-angle-right"></i></a>
+                </div>
+
+                <div class="contenedor-subcategorias">
+                    <div class="subcategoria" data-categoria="Mujeres">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar">
+                                <i class="fas fa-caret-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo">Mujeres</h3>
+                            <a href="#">Zapatillas</a>
+                            <a href="#">Pantalones</a>
+                            <a href="#">Camisetas</a>
+                            <a href="#">Faldas</a>
+                            <a href="#">Blusas</a> 
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../../static/img/tecnologia-banner-1.png" alt=""></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../../static/img/tecnologia-galeria-1.png" alt=""></a>
+                            <a href="#"><img src="../../static/img/tecnologia-galeria-2.png" alt=""></a>
+                            <a href="#"><img src="../../static/img/tecnologia-galeria-3.png" alt=""></a>
+                            <a href="#"><img src="../../static/img/tecnologia-galeria-4.png" alt=""></a>
+
+                        </div>
+                    </div>  
+                    <div class="subcategoria " data-categoria="Hombres">
+                        <div class="enlaces-subcategoria">
+                            <button class="btn-regresar">
+                                <i class="fas fa-caret-left"></i>Regresar
+                            </button>
+                            <h3 class="subtitulo">Hombres</h3>
+                            <a href="#">Zapatillas</a>
+                            <a href="#">Pantalones</a>
+                            <a href="#">Camisetas</a>
+                            <a href="#">Camisas</a> 
+                        </div>
+                        <div class="banner-subcategoria">
+                            <a href="#"><img src="../../static/img/hogar-banner-1.png" alt=""></a>
+                        </div>
+                        <div class="galeria-subcategoria">
+                            <a href="#"><img src="../../static/img/hogar-galeria-1.png" alt=""></a>
+                            <a href="#"><img src="../../static/img/hogar-galeria-2.png" alt=""></a>
+                            <a href="#"><img src="../../static/img/hogar-galeria-3.png" alt=""></a>
+                            <a href="#"><img src="../../static/img/hogar-galeria-4.png" alt=""></a>
+
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    {%block content%}
+    {%endblock%}
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class=" contenedor-footer">
+            
+            <div class="lema-footer">
+                <h4>Acerca de nosotros</h4>
+                <!-- <a href="#"><img src="../../static/img/hade_logo_1.jpeg" alt=""></a> -->
+                <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit, itaque consequatur inventore, quae neque qui sunt reprehenderit ullam, vitae debitis minus illum ipsa similique quisquam et voluptatum fugiat quia.</h5>
+            </div>
+            <div class="redes-footer">
+                <h4> Redes Sociales </h4>
+            
+                <div class="red-social"><a href="#"><i class="fab fa-facebook"></i></a><span>csiguenos en Facebook</span></div>
+                <div class="red-social"><a href="#"><i class="fab fa-instagram"></i></a><span>siguenos en fa-instagram</span></div>
+                <div class="red-social"><a href="#"><i class="fab fa-whatsapp"></i></a><span>siguenos en whatsapp</span></div>
+               
+               
+                
+            </div>
+            <div class="enlaces-footer">
+                <h4>Ayuda/Contacto</h4>
+                <div>
+                <div class="enlace"><a href="#"><i class="fas fa-home"></i><span>Tienda Fisica: Calle 72i1 #26i 38 </span></a></strong></div>
+                
+                <div class="enlace"><a href="#"><i class="fas fa-map-signs"></i><span>Mapa del Sitio</span></a></div>
+
+                <div class="enlace"><a href="#"><i class="fas fa-question-circle"></i><span>FAQ</span></a></div>
+                </div>
+                
+               
+            </div>
+           
+        </div>
+        <div class="derechos-reservados">
+            <h5>@2020- Hade-Store</h5>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/98a4cf5663.js" crossorigin="anonymous"></script>
+    <script src="../../static/js/menu.js"></script>
+    
+</body>
+</html>
